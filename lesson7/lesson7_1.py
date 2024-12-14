@@ -1,7 +1,7 @@
-import tools
+from tools import taipei
 
 try:
-    ubike_data:list[dict] = tools.get_ubikes()
+    ubike_data:list[dict] = taipei.get_ubikes()
 except Exception as e:
     print(e)
 else:
